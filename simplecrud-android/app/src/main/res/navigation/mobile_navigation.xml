@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_create">
+
+    <fragment
+        android:id="@+id/navigation_create"
+        android:name="com.miniproject.simplecrud.ui.create.CreateFragment"
+        android:label="@string/title_create"
+        tools:layout="@layout/fragment_create" />
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.miniproject.simplecrud.ui.list.ListFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
+        android:id="@+id/navigation_exit"
+        android:name="com.miniproject.simplecrud.ui.exit.ExitFragment"
+        android:label="@string/title_exit"
+        tools:layout="@layout/fragment_exit" />
+    <fragment
+        android:id="@+id/edit_frag"
+        android:name="com.miniproject.simplecrud.ui.edit.EditFragment"
+        tools:layout="@layout/fragment_edit"
+        />
+</navigation>
